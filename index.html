@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Radio Goyz</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="display: flex; justify-content: center;">
+        <div>
+            <header class="header" style="background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('imgs/ncihe.png'); background-position-x: right; background-position-y: center; background-size: auto; max-width: 1000px; width: 90vw; ">
+                <img src="imgs/bannerTRGhires.png" style="height: 3em; font-size: x-large;" alt="The Radio Goyz official horizontal logo" title="The Radio Goyz">
+                <div id="header_row">
+                    <nav>
+                        <a href="home.html" target="iframe1" class="header_btn" id="home_btn">home</a>
+                        <a href="notes.html" target="iframe1" class="header_btn" id="music_btn">music</a>
+                        <a class="header_btn" id="art_btn">videos</a>
+                        <a href="about.html" target="iframe1" class="header_btn" id="about_btn">about</a>
+                        <a class="header_btn" id="sitemap_btn">sitemap</a>
+                        <a class="header_btn" id="downloads_btn" style="padding-bottom: none;">downloads 
+                            <div class="drop_menu" id="downloads_menu">
+                                <nav>
+                                    <button>images</button>
+                                    <button>music</button>
+                                </nav>
+                            </div>
+                        </a>
+                    </nav>
+                </div>
+
+            </header>
+
+            <div class="content-window">
+                <div>
+                    <div style="background-color: blue;">
+                        <a href="the-newer-shit.html"><marquee style="margin-top: 0; color:yellow">NEW ALBUM: THE NEWER SHIT, FIND IT ON YOUTUBE, BANDCAMP AND SOUNDCLOUD</marquee></a>
+                    </div>
+                    <iframe src="home.html" frameborder="0" width="100%" height="50vh" name="iframe1"></iframe>
+
+                </div>
+            </div>
+            </div>
+        </div>
+        <footer style="background-color: gray; position: fixed;">
+            <span>The Radio Goyz 2026 </span>
+            <span><img src="imgs/youtube.ico" width="16" height="auto"><a href="https://www.youtube.com/channel/UCRN4kUtzH9KvzQTgHt9U-2A">YouTube</a></span>
+            <span><img src="imgs/soundcloud.ico" width="16" height="auto"><a href="https://soundcloud.com/the-radio-goyz">SoundCloud</a></span>
+            <span><a href="https://theradiogoyz.bandcamp.com/">BandCamp</a></span>
+        </footer>
+    <style>
+        @font-face {
+            font-family: "terminal";
+            src: url(fonts/modern_dos/ModernDOS8x14.ttf);
+        }
+
+        iframe{
+            height: 100vh;
+        }
+        .header {
+            position: relative;
+            display: grid;
+            grid-template-columns: auto auto;
+            border-width: 2px;
+            border-style: solid;
+            border-color: white;
+        }
+        #header_row {
+            position: absolute;
+            right: 0;
+            bottom: 0%;
+            font-size: 0;
+        }
+        .header_btn, button {
+            user-select: none;
+            cursor: pointer;
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-family: 'terminal';
+            font-size: large;
+            padding-left: 10px; padding-right: 10px;
+            padding-bottom: none;
+
+        }
+        .header_btn:hover, button:hover{
+            color: red;
+            text-shadow: 0 0 10px red;
+            text-decoration: underline;
+        }
+        .drop_menu {
+            z-index: 2;
+            background-color: white;
+            position: absolute;
+            display: none;
+            top: 100%;
+            left: 0;
+        }
+        .drop_menu button {
+            color: black;
+            width: 100%;
+        }
+        .drop_menu button:hover {
+            color: white;
+            background-color: red;
+        }
+        #downloads_btn {
+            position: relative;
+        }
+        #downloads_btn:hover .drop_menu {
+            display: block;
+        }
+
+        
+    </style>
+</body>
+</html>
