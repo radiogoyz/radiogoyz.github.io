@@ -24,3 +24,18 @@ body {
     height: 50vh;
     background-color: white;
 }
+
+.album_art_switch {
+    background-color: red;
+    color: white;
+    border-color: brown;
+
+}
+
+#jchl_album_display a{
+    color: red;
+}
+
+#tns_album_display a{
+    color: orange;
+}
